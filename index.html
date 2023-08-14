@@ -76,6 +76,7 @@ class Asteroid {
       this.xPosition = random(50 / 2, width - 50 / 2);
       this.yPosition = random(50 / 2, height - 50 / 2);
     } while (dist(spaceship.xPosition, spaceship.yPosition, this.xPosition, this.yPosition) < spaceship.size / 2 + 50); 
+    this.xSpeed = random(-2, 2); // Horizontal speed of the asteroid
     this.ySpeed = random(-2, 2); // Vertical speed of the asteroid
   }
 

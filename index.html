@@ -189,16 +189,16 @@ let game; // Global variable to hold the game object
 // Function to preload the assets
 function preload() {
   // Preloading the images
-  bgImage = loadImage("https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/GTYSdDW/sparkling-night-sky-in-space_thumbnail-1080_01.png");
-  redGemTexture = loadImage("https://3.bp.blogspot.com/-71SbO6QEZcg/XI1_VyoxIuI/AAAAAAAJJ3k/PWiwTG12Zx0Qk_zSkNoeRGnJyLEID9MyACLcBGAs/s320/Red_Gem_PNG_Clip_Art_Image.png");
-  greenGemTexture = loadImage("https://2.bp.blogspot.com/-8GzN4w0qmjk/XI1_R6xc5tI/AAAAAAAJJ3g/_DtnPZGuQP0UV8OS2jn0czxJ96G9O3z0ACLcBGAs/s320/Green_Gem_PNG_Clip_Art_Image.png");
-  blueGemTexture = loadImage("https://1.bp.blogspot.com/-UEuXDCv6_Ig/XI1_XEvABHI/AAAAAAAJJ3o/QDKdITOnwLguVP_u8rzNWYDzWmWI6P42gCLcBGAs/s320/Sky_Blue_Gem_PNG_Clip_Art_Image.png");
-  asteroidTexture = loadImage("https://static.wikia.nocookie.net/thesolarsystem6361/images/7/7b/Nereid2.png/revision/latest/scale-to-width-down/220?cb=20170909163903");
-  spaceshipImage = loadImage("https://4.bp.blogspot.com/-6dnJiSMBDTA/TZvaB_bPjmI/AAAAAAAAALM/5Tu6XdzBrqc/s200/logo_ovni.png");
+  bgImage = loadImage("./Assets/SpaceBG.png");
+  redGemTexture = loadImage("./Assets/RedGem.png");
+  greenGemTexture = loadImage("./Assets/GreenGem.png");
+  blueGemTexture = loadImage("./Assets/BlueGem.png");
+  asteroidTexture = loadImage("./Assets/Asteroid.png");
+  spaceshipImage = loadImage("./Assets/Spaceship.png");
 }
 
 function setup() {
-  createCanvas(windowWidth, windowHeight); // Creating the canvas
+  createCanvas(windowWidth-5, windowHeight-5); // Creating the canvas
   game = new Game(); // Creating the game object
   // Creating a restart button and linking it to the game's restart function
   game.restartButton = createButton('Restart Game');

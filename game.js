@@ -175,7 +175,9 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(windowWidth-5, windowHeight-5); // Creating the canvas
+  let canvas = createCanvas(windowWidth-10, windowHeight-10); // Creating the canvas
+  canvas.parent('game');  // This line attaches the canvas to the #game section
+  
   game = new Game(); // Creating the game object
   // Creating a restart button and linking it to the game's restart function
   game.restartButton = createButton('Restart Game');

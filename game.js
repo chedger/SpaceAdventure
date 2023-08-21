@@ -175,12 +175,13 @@ function preload() {
 }
 
 function setup() {
-  let canvas = createCanvas(windowWidth-10, windowHeight-10); // Creating the canvas
+  let canvas = createCanvas(windowWidth*0.9745, windowHeight*0.9745); // Creating the canvas
   canvas.parent('game');  // This line attaches the canvas to the #game section
   
   game = new Game(); // Creating the game object
   // Creating a restart button and linking it to the game's restart function
   game.restartButton = createButton('Restart Game');
+  game.restartButton.parent('game');
   // Centering the restart button
   game.restartButton.position((width - game.restartButton.width) / 2, height / 2 + 80);
   game.restartButton.mousePressed(() => game.restart());

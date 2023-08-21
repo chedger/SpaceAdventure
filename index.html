@@ -9,45 +9,69 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
     <style>
         body {
-            margin-left: -10px;
-            background-color: black;
-        }
-        div {
-            padding-left: 150px;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(45deg, #020031 0%, #6d3353 100%);
+            color: #FFF;
         }
         p {
             font-size: 22px;
-            padding-right: 250px;
-        }
-        canvas {
-            border: 2px solid black;
-            padding-left: 1px;
+            line-height: 1.5;
         }
         button {
-            margin-top: -23px;
-            margin-left: -5px;
+            margin-top: 38px;
+            margin-left: 12px;
         }
+
         nav {
             display: flex;
-            justify-content: space-around;
-            padding: 20px 0px 15px;
-            width: 100%;
+            justify-content: center;
+            padding: 20px 0;
+            background: rgba(0, 0, 0, 0.8);
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
         }
+
         nav a {
+            margin: 0 10px;
             padding: 10px 20px;
-            background-color: #ffffff33;
-            color: #FFFFFF;
-            text-decoration: none;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid #FFF;
             border-radius: 5px;
-            transition: background-color 0.3s ease;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.8);
         }
+
         nav a:hover {
-            background-color: #ffffff11;
+            background: rgba(255, 255, 255, 0.2);
+            color: rgba(0, 0, 0, 0.5);
+        }
+
+        canvas{
+            border-radius: 10px;
+        }
+
+        #game {
+            margin: 50px auto;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 5px 5px 1px 5px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
         }
         #instructions,
         #about {
-            color: white;
-            padding-top:50px;
+            max-width: 850px;
+            margin: 50px auto;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            border-bottom: 2px solid #FFF;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
         }
 
     </style>
